@@ -24,6 +24,8 @@ git commit -m "commit inicial"
 git remote add origin <link-repositório-remoto>
 git remote add origin https://github.com/juniorsmartins/siteFrontend.git
 
+# envia commit locais para repositório remoto (opção -u serve para salvar essa preferência no Git. Nos próximos envios ou atualizações, você não precisará digitar origin master inteirinho de novo; bastará digitar apenas: git push. Pode usar -u em todas as branchs.)
+git push -u origin master
 ```
 
 ## 2. Repositório remoto
