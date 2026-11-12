@@ -17,7 +17,6 @@ React é uma biblioteca Javascript para construção de interfaces interativas e
 ```bash
 # criar o projeto usando o Vite
 npm create vite@latest
-
 ```
 
 ## Comandos úteis
@@ -27,11 +26,12 @@ npm create vite@latest
 nvm install <versao-desejada>
 nvm install 26.13.1
 
-# atualizar a versão do npm 
+# atualizar globalmente (-g) a versão do npm 
 npm install -g npm@latest
 
 # atualizar a versão do nvm (ver qual a mais nova versão aqui: https://www.nvmnode.com/pt/guide/download.html)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
-
+# lê o arquivo de configuração do projeto (package.json) e baixa todas as dependências e bibliotecas (cria pasta node_modules)
+npm install
 ```
