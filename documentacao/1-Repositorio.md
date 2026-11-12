@@ -32,7 +32,7 @@ git push -u origin master
 
 [Link](https://github.com/juniorsmartins/siteFrontend.git)
 
-## 3. Comandos Git
+## 3. Comandos úteis do Git
 
 ```bash
 # desfaz alterações e retorna para o estado da última versão salva
@@ -47,5 +47,13 @@ git checkout <hash-do-commit>
 # Viaja no tempo: coloca de volta no último commit mais recente da branch nomeada
 git checkout <nome-da-branch>
 
+# puxa modificações de remoto para o local
+git pull
+
+# envia modificações locais para o remoto
+git push 
+
+# traz cópia de repositório remoto para ambiente local
+git clone <link-repositório-remoto>
 ```
 
