@@ -21,7 +21,14 @@ React e Vite trabalham juntos. O React fornece a estrutura para você programar 
 
 - Rest Operator (representado por ...): é uma sintaxe do JavaScript moderno que permite agrupar o restante dos elementos de um array ou de um objeto em uma única variável.
 
-- Hooks: são funções especiais do React que dão "superpoderes" aos componentes funcionais (simples funções JavaScript), permitindo que eles guardem estado e executem ações sem precisar de classes. Servem para controlar dados que mudam na tela (estado) e executar ações (efeitos colaterais), como buscar dados de uma API. Os dois mais comuns e essenciais são: useState (cria variável de estado. Ex: guardar se o usuário escolheu Dark Mode no Kortex News) e useEffect (executa código quando algo acontece. Ex: faz o fetch dos dados do IBGE quando a página carrega).
+- Hooks: são funções especiais do React que dão "superpoderes" aos componentes funcionais (simples funções JavaScript), permitindo que eles guardem estado e executem ações sem precisar de classes. Servem para controlar dados que mudam na tela (estado) e executar ações (efeitos colaterais), como buscar dados de uma API. Os dois mais comuns e essenciais são: useState e useEffect.
+    - useState: cria variável de estado. Ex: guardar se usuário escolheu Dark Mode no Kortex News.
+    - useEffect: executa código quando algo acontece. Ex: faz o fetch dos dados do IBGE quando a página carrega.
+
+- Render: é o processo de desenhar componentes na tela. O React faz isso sempre que o estado ou as propriedades de um componente mudam. 
+
+
+Explicação do restaurante: React (garçon), componentes (cozinheiro), hooks (ferramentas do cozinheiro), propriedades (ingredientes), render (cliente faz pedido - etapa 1 de acionar, pedido entregue à cozinha - etapa 2 de renderizar, prato pronto e cliente servido - etapa 3 de comprometer-se - DOM modificado). 
 
 
 ### Padrões de nomenclatura
