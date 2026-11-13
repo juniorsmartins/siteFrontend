@@ -1,14 +1,17 @@
 import "./global.css"
 import { Button } from "./components/button"
-import "./styles.css"
+import { useMessage } from "./hooks/useMessage"
+import styles from "./app.module.css"
 
 export function App() {
 
-  return <div className="container">
+  const { show } = useMessage()
+
+  return <div className={styles.container}>
     <h1>Hello World!</h1>
-    <Button className="btn" name="Criar" onClick={() => alert("Criar")} />
-    <Button className="btn" name="Editar" onClick={() => alert("Editar")} />
-    <Button className="btn" name="Remover" onClick={() => alert("Remover")} />
+    <Button name="Criar" onClick={() => show()} />
+    <Button name="Editar" onClick={() => alert("Editar")} />
+    <Button name="Remover" onClick={() => alert("Remover")} />
   </div>
 }
 
