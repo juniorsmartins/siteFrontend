@@ -1,7 +1,9 @@
 {
-  "name": "siteFrontend",
+  "name": "sitefrontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Kortex News - site de tecnologia para jornalismo",
+  "author": "Junior Martins",
   "type": "module",
   "scripts": {
     "dev": "vite",
