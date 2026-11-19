@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Kortex News — global.css
+   Paleta: Dark Waters
+   ========================================================================== */
+
+:root {
+    /* 1) Cores da paleta (valores brutos — não use direto nos componentes) */
+    --prussian-blue: #0b132b;
+    --space-indigo: #1c2541;
+    --dusk-blue: #3a506b;
+    --tropical-teal: #5bc0be;
+    --white: #ffffff;
+    /* Tom auxiliar derivado (NÃO é da paleta): texto secundário legível. */
+    --mist: #a9b6c9;
+
+
+    /* 2) Tokens semânticos (use ESTES nos componentes) */
+    /* fundo da página */
+    --color-bg: var(--prussian-blue);
+    /* cards, header, footer */
+    --color-surface: var(--space-indigo);
+    /* bordas e divisórias */
+    --color-border: var(--dusk-blue);
+    /* texto principal */
+    --color-text: var(--white);
+    /* datas, autores, legendas */
+    --color-text-muted: var(--mist);
+    /* links, botões, destaques */
+    --color-accent: var(--tropical-teal);
+    /* texto sobre o acento */
+    --color-on-accent: var(--prussian-blue);
+
+
+    /* 3) TIPOGRAFIA */
+
+    /* Fonte para a estrutura, menus, badges, autor, datas (Sans-serif moderna) */
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Fonte para leitura das notícias, títulos e corpo (Serifada editorial) */
+    --font-editorial: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+    color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Garante que o padding não aumente o tamanho do elemento */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-optical-sizing: auto;
+}
+
+
+/* ---------- Títulos ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-text);
+    font-family: var(--font-editorial);
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    color: var(--color-accent);
+    font-family: var(--font-ui);
+}
+
+a:hover {
+    color: var(--color-text);
+    font-family: var(--font-ui);
+}
+
+
+/* ---------- Botões ---------- */
+
+button {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.65rem 1.25rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 1rem;
+    font-family: var(--font-ui);
+    text-decoration: none;
+    /*cor padrão do botão */
+    background: var(--color-on-accent);
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+button:hover {
+    font-family: var(--font-ui);
+    background: transparent;
+}
