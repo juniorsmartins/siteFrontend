@@ -1,0 +1,19 @@
+.container {
+    display: inline-block;
+    /*    color: var(--color-on-accent); */
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.65rem 1.25rem;
+    /*    border: 1px solid var(--color-accent);
+    border-radius: var(--radius);
+    font-family: var(--font-ui);
+    text-decoration: none; */
+    /*cor padrão do botão */
+    /*    background: var(--color-on-accent); */
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.container:hover {
+    background: transparent;
+    /*    color: var(--color-accent); */
+}
