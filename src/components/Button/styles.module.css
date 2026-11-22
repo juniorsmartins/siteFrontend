@@ -1,19 +1,22 @@
-.container {
-    display: inline-block;
-    /*    color: var(--color-on-accent); */
-    font-weight: 600;
+.button {
+    height: 2rem;
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.45rem;
+    border: 1px solid var(--color-border);
+
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+
+    font-size: 1rem;
+    font-weight: 700;
+
     cursor: pointer;
-    padding: 0.65rem 1.25rem;
-    /*    border: 1px solid var(--color-accent);
-    border-radius: var(--radius);
-    font-family: var(--font-ui);
-    text-decoration: none; */
-    /*cor padrão do botão */
-    /*    background: var(--color-on-accent); */
-    transition: background 0.15s ease, color 0.15s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-.container:hover {
+.button:hover {
+    font-family: var(--font-ui);
+    color: var(--color-accent);
     background: transparent;
-    /*    color: var(--color-accent); */
 }

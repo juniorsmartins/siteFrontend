@@ -1,10 +1,10 @@
 import styles from "./styles.module.css"
 
 type Props = React.ComponentProps<"button"> & {
-    name: string
+    text: string
 }
 
-export function Button({ name, ...rest }: Props) {
+export function Button({ text, ...rest }: Props) {
 
-    return <button className={styles.container} {...rest}> {name} </button>
+    return <button type="button" className={styles.button} {...rest}> {text} </button>
 }
