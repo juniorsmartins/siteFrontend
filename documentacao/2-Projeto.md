@@ -62,4 +62,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # lê o arquivo de configuração do projeto (package.json) e baixa todas as dependências e bibliotecas (cria pasta node_modules)
 npm install
+
+# inicia o servidor de desenvolvimento (abre o site no navegador)
+npm run dev
+
+
 ```
