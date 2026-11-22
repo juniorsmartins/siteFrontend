@@ -1,6 +1,7 @@
 import "./global.css"
 import styles from "./app.module.css"
 import { Header } from "./components/Header"
+import { Footer } from "./components/Footer"
 
 export function App() {
 
@@ -11,6 +12,7 @@ export function App() {
         <h1>Hello World!</h1>
         <a>Link Teste</a>
       </div>
+      <Footer />
     </main>
   )
 }
