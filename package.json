@@ -6,7 +6,7 @@
   "author": "Junior Martins",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
